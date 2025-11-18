@@ -70,87 +70,12 @@ load_gtag()
 log_event('setupComplete', {})
 ------------------------------------------------------------Logs------------------------------------------------------------
 W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu jammy InRelease' does not seem to provide it (sources.list entry misspelt?)
-dpkg: libjack-jackd2-0:amd64: dependency problems, but removing anyway as you requested:
- libavdevice58:amd64 depends on libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125; however:
-  Package libjack-jackd2-0:amd64 is to be removed.
-  Package libjack-0.125 is not installed.
-  Package libjack-jackd2-0:amd64 which provides libjack-0.125 is to be removed.
- libavdevice58:amd64 depends on libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125; however:
-  Package libjack-jackd2-0:amd64 is to be removed.
-  Package libjack-0.125 is not installed.
-  Package libjack-jackd2-0:amd64 which provides libjack-0.125 is to be removed.
-
-(Reading database ... 121703 files and directories currently installed.)
-Removing libjack-jackd2-0:amd64 (1.9.20~dfsg-1) ...
-Selecting previously unselected package libjack0:amd64.
-(Reading database ... 121693 files and directories currently installed.)
-Preparing to unpack .../0-libjack0_1%3a0.125.0-3build2_amd64.deb ...
-Unpacking libjack0:amd64 (1:0.125.0-3build2) ...
-Selecting previously unselected package libasound2-dev:amd64.
-Preparing to unpack .../1-libasound2-dev_1.2.6.1-1ubuntu1_amd64.deb ...
-Unpacking libasound2-dev:amd64 (1.2.6.1-1ubuntu1) ...
-Selecting previously unselected package libinstpatch-1.0-2:amd64.
-Preparing to unpack .../2-libinstpatch-1.0-2_1.1.6-1_amd64.deb ...
-Unpacking libinstpatch-1.0-2:amd64 (1.1.6-1) ...
-Selecting previously unselected package timgm6mb-soundfont.
-Preparing to unpack .../3-timgm6mb-soundfont_1.3-5_all.deb ...
-Unpacking timgm6mb-soundfont (1.3-5) ...
-Selecting previously unselected package libfluidsynth3:amd64.
-Preparing to unpack .../4-libfluidsynth3_2.2.5-1_amd64.deb ...
-Unpacking libfluidsynth3:amd64 (2.2.5-1) ...
-Selecting previously unselected package libjack-dev.
-Preparing to unpack .../5-libjack-dev_1%3a0.125.0-3build2_amd64.deb ...
-Unpacking libjack-dev (1:0.125.0-3build2) ...
-Setting up libjack0:amd64 (1:0.125.0-3build2) ...
-Setting up libjack-dev (1:0.125.0-3build2) ...
-Setting up libasound2-dev:amd64 (1.2.6.1-1ubuntu1) ...
-Setting up timgm6mb-soundfont (1.3-5) ...
-update-alternatives: using /usr/share/sounds/sf2/TimGM6mb.sf2 to provide /usr/share/sounds/sf2/default-GM.sf2 (default-GM.sf2) in auto mode
-update-alternatives: using /usr/share/sounds/sf2/TimGM6mb.sf2 to provide /usr/share/sounds/sf3/default-GM.sf3 (default-GM.sf3) in auto mode
-Setting up libinstpatch-1.0-2:amd64 (1.1.6-1) ...
-Setting up libfluidsynth3:amd64 (2.2.5-1) ...
-Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
-/sbin/ldconfig.real: /usr/local/lib/libtbbbind.so.3 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libhwloc.so.15 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtcm.so.1 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libur_adapter_opencl.so.0 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtcm_debug.so.1 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtbbmalloc_proxy.so.2 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtbb.so.12 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libur_adapter_level_zero.so.0 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libur_loader.so.0 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtbbbind_2_5.so.3 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libumf.so.1 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtbbbind_2_0.so.3 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libur_adapter_level_zero_v2.so.0 is not a symbolic link
-
-/sbin/ldconfig.real: /usr/local/lib/libtbbmalloc.so.2 is not a symbolic link
-
-Cloning into 'mt3'...
-remote: Enumerating objects: 469, done.
-remote: Counting objects: 100% (242/242), done.
-remote: Compressing objects: 100% (101/101), done.
-remote: Total 469 (delta 165), reused 141 (delta 141), pack-reused 227 (from 2)
-Receiving objects: 100% (469/469), 177.42 KiB | 1.39 MiB/s, done.
-Resolving deltas: 100% (314/314), done.
+fatal: destination path 'mt3' already exists and is not an empty directory.
 Looking in links: https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 Obtaining file:///content
   Preparing metadata (setup.py) ... done
 Requirement already satisfied: nest-asyncio in /usr/local/lib/python3.12/dist-packages (1.6.0)
-Collecting pyfluidsynth==1.3.0
-  Downloading pyFluidSynth-1.3.0-py3-none-any.whl.metadata (795 bytes)
+Requirement already satisfied: pyfluidsynth==1.3.0 in /usr/local/lib/python3.12/dist-packages (1.3.0)
 Requirement already satisfied: jax[cuda12] in /usr/local/lib/python3.12/dist-packages (0.7.2)
 Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from pyfluidsynth==1.3.0) (2.0.2)
 Requirement already satisfied: jaxlib<=0.7.2,>=0.7.2 in /usr/local/lib/python3.12/dist-packages (from jax[cuda12]) (0.7.2)
@@ -159,41 +84,36 @@ Requirement already satisfied: opt_einsum in /usr/local/lib/python3.12/dist-pack
 Requirement already satisfied: scipy>=1.13 in /usr/local/lib/python3.12/dist-packages (from jax[cuda12]) (1.16.3)
 Requirement already satisfied: jax-cuda12-plugin<=0.7.2,>=0.7.2 in /usr/local/lib/python3.12/dist-packages (from jax-cuda12-plugin[with-cuda]<=0.7.2,>=0.7.2; extra == "cuda12"->jax[cuda12]) (0.7.2)
 Collecting flax@ git+https://github.com/google/flax#egg=flax (from mt3==0.0.1)
-  Cloning https://github.com/google/flax to /tmp/pip-install-kra1n287/flax_ba27d43ab0954b10b22a5dbb6bda2309
-  Running command git clone --filter=blob:none --quiet https://github.com/google/flax /tmp/pip-install-kra1n287/flax_ba27d43ab0954b10b22a5dbb6bda2309
+  Cloning https://github.com/google/flax to /tmp/pip-install-ctqwhk3x/flax_aa2962e44f914f749a684ee63c88a74c
+  Running command git clone --filter=blob:none --quiet https://github.com/google/flax /tmp/pip-install-ctqwhk3x/flax_aa2962e44f914f749a684ee63c88a74c
   Resolved https://github.com/google/flax to commit 09537f494350c3db51fa7f9207290e959631ffcc
   Installing build dependencies ... done
   Getting requirements to build wheel ... done
   Preparing metadata (pyproject.toml) ... done
 Collecting note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq (from mt3==0.0.1)
-  Cloning https://github.com/magenta/note-seq to /tmp/pip-install-kra1n287/note-seq_cd2ea03072c043c886ad639266c4440d
-  Running command git clone --filter=blob:none --quiet https://github.com/magenta/note-seq /tmp/pip-install-kra1n287/note-seq_cd2ea03072c043c886ad639266c4440d
+  Cloning https://github.com/magenta/note-seq to /tmp/pip-install-ctqwhk3x/note-seq_4297bb3703aa4d8487955d68de78f3ee
+  Running command git clone --filter=blob:none --quiet https://github.com/magenta/note-seq /tmp/pip-install-ctqwhk3x/note-seq_4297bb3703aa4d8487955d68de78f3ee
   Resolved https://github.com/magenta/note-seq to commit 35825508885343fb06f93dc87ff491dbbf034505
   Preparing metadata (setup.py) ... done
 Collecting seqio@ git+https://github.com/google/seqio#egg=seqio (from mt3==0.0.1)
-  Cloning https://github.com/google/seqio to /tmp/pip-install-kra1n287/seqio_d93de3b16b49481ab8696dfe7c71f71d
-  Running command git clone --filter=blob:none --quiet https://github.com/google/seqio /tmp/pip-install-kra1n287/seqio_d93de3b16b49481ab8696dfe7c71f71d
+  Cloning https://github.com/google/seqio to /tmp/pip-install-ctqwhk3x/seqio_4316d54fcf644732aecb4d9673931ed2
+  Running command git clone --filter=blob:none --quiet https://github.com/google/seqio /tmp/pip-install-ctqwhk3x/seqio_4316d54fcf644732aecb4d9673931ed2
   Resolved https://github.com/google/seqio to commit b898b9f992877cea2cda40dbc03597ea5cd4b08f
   Preparing metadata (setup.py) ... done
 Collecting t5x@ git+https://github.com/google-research/t5x#egg=t5x (from mt3==0.0.1)
-  Cloning https://github.com/google-research/t5x to /tmp/pip-install-kra1n287/t5x_ff4f8b73888e4e3692f4371846905389
-  Running command git clone --filter=blob:none --quiet https://github.com/google-research/t5x /tmp/pip-install-kra1n287/t5x_ff4f8b73888e4e3692f4371846905389
+  Cloning https://github.com/google-research/t5x to /tmp/pip-install-ctqwhk3x/t5x_8dc37aba45324f5b93840f20d7a855d9
+  Running command git clone --filter=blob:none --quiet https://github.com/google-research/t5x /tmp/pip-install-ctqwhk3x/t5x_8dc37aba45324f5b93840f20d7a855d9
   Resolved https://github.com/google-research/t5x to commit f74917cc8f311f323c90c6b1412e7a6c555837d5
   Preparing metadata (setup.py) ... done
 Requirement already satisfied: absl-py in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (1.4.0)
 Requirement already satisfied: gin-config in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (0.5.0)
 Requirement already satisfied: immutabledict in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (4.2.2)
 Requirement already satisfied: librosa in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (0.11.0)
-Collecting mir_eval (from mt3==0.0.1)
-  Downloading mir_eval-0.8.2-py3-none-any.whl.metadata (3.0 kB)
-Collecting pretty_midi (from mt3==0.0.1)
-  Downloading pretty_midi-0.2.11.tar.gz (5.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 69.2 MB/s eta 0:00:00
-  Preparing metadata (setup.py) ... done
+Requirement already satisfied: mir_eval in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (0.8.2)
+Requirement already satisfied: pretty_midi in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (0.2.11)
 Requirement already satisfied: scikit-learn in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (1.6.1)
-Collecting t5 (from mt3==0.0.1)
-  Downloading t5-0.9.4-py2.py3-none-any.whl.metadata (25 kB)
-Requirement already satisfied: tensorflow in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (2.19.0)
+Requirement already satisfied: t5 in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (0.9.4)
+Requirement already satisfied: tensorflow in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (2.18.1)
 Requirement already satisfied: tensorflow-datasets in /usr/local/lib/python3.12/dist-packages (from mt3==0.0.1) (4.9.9)
 Requirement already satisfied: jax-cuda12-pjrt==0.7.2 in /usr/local/lib/python3.12/dist-packages (from jax-cuda12-plugin<=0.7.2,>=0.7.2->jax-cuda12-plugin[with-cuda]<=0.7.2,>=0.7.2; extra == "cuda12"->jax[cuda12]) (0.7.2)
 Requirement already satisfied: nvidia-cublas-cu12>=12.1.3.1 in /usr/local/lib/python3.12/dist-packages (from jax-cuda12-plugin[with-cuda]<=0.7.2,>=0.7.2; extra == "cuda12"->jax[cuda12]) (12.6.4.1)
@@ -209,7 +129,7 @@ Requirement already satisfied: nvidia-nvjitlink-cu12>=12.1.105 in /usr/local/lib
 Requirement already satisfied: nvidia-cuda-nvrtc-cu12>=12.1.55 in /usr/local/lib/python3.12/dist-packages (from jax-cuda12-plugin[with-cuda]<=0.7.2,>=0.7.2; extra == "cuda12"->jax[cuda12]) (12.6.77)
 Requirement already satisfied: nvidia-nvshmem-cu12>=3.2.5 in /usr/local/lib/python3.12/dist-packages (from jax-cuda12-plugin[with-cuda]<=0.7.2,>=0.7.2; extra == "cuda12"->jax[cuda12]) (3.4.5)
 Requirement already satisfied: msgpack in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (1.1.2)
-Requirement already satisfied: optax in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (0.2.6)
+Requirement already satisfied: optax in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (0.2.7.dev0)
 Requirement already satisfied: orbax-checkpoint in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (0.11.28)
 Requirement already satisfied: tensorstore in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (0.1.78)
 Requirement already satisfied: rich>=11.1 in /usr/local/lib/python3.12/dist-packages (from flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (13.9.4)
@@ -227,73 +147,56 @@ Requirement already satisfied: lazy_loader>=0.1 in /usr/local/lib/python3.12/dis
 Requirement already satisfied: threadpoolctl>=3.1.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn->mt3==0.0.1) (3.6.0)
 Requirement already satisfied: attrs in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (25.4.0)
 Requirement already satisfied: bokeh>=3.0.3 in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (3.7.3)
-Collecting intervaltree>=2.1.0 (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1)
-  Downloading intervaltree-3.1.0.tar.gz (32 kB)
-  Preparing metadata (setup.py) ... done
+Requirement already satisfied: intervaltree>=2.1.0 in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (3.1.0)
 Requirement already satisfied: IPython in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (7.34.0)
 Requirement already satisfied: pandas>=0.18.1 in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (2.2.2)
 Requirement already satisfied: protobuf>=4.21.2 in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (5.29.5)
 Requirement already satisfied: pydub in /usr/local/lib/python3.12/dist-packages (from note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.25.1)
-Collecting mido>=1.1.16 (from pretty_midi->mt3==0.0.1)
-  Downloading mido-1.3.3-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: mido>=1.1.16 in /usr/local/lib/python3.12/dist-packages (from pretty_midi->mt3==0.0.1) (1.3.3)
 Requirement already satisfied: six in /usr/local/lib/python3.12/dist-packages (from pretty_midi->mt3==0.0.1) (1.17.0)
-Requirement already satisfied: importlib_resources in /usr/local/lib/python3.12/dist-packages (from pretty_midi->mt3==0.0.1) (6.5.2)
-Collecting clu (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1)
-  Downloading clu-0.0.12-py3-none-any.whl.metadata (1.9 kB)
+Requirement already satisfied: importlib-resources in /usr/local/lib/python3.12/dist-packages (from pretty_midi->mt3==0.0.1) (6.5.2)
+Requirement already satisfied: clu in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (0.0.12)
 Requirement already satisfied: editdistance in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (0.8.1)
 Requirement already satisfied: packaging in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (25.0)
-Collecting pyglove (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1)
-  Downloading pyglove-0.4.5-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: pyglove in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (0.4.5)
 Requirement already satisfied: sentencepiece>=0.2 in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (0.2.1)
-Requirement already satisfied: tensorflow-text in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (2.19.0)
+Requirement already satisfied: tensorflow-text in /usr/local/lib/python3.12/dist-packages (from seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (2.18.1)
 Requirement already satisfied: babel in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (2.17.0)
-Collecting mesh-tensorflow>=0.1.13 (from mesh-tensorflow[transformer]>=0.1.13->t5->mt3==0.0.1)
-  Downloading mesh_tensorflow-0.1.21-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: mesh-tensorflow>=0.1.13 in /usr/local/lib/python3.12/dist-packages (from mesh-tensorflow[transformer]>=0.1.13->t5->mt3==0.0.1) (0.1.21)
 Requirement already satisfied: nltk in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (3.9.1)
-Collecting rouge-score>=0.1.2 (from t5->mt3==0.0.1)
-  Downloading rouge_score-0.1.2.tar.gz (17 kB)
-  Preparing metadata (setup.py) ... done
-Collecting sacrebleu (from t5->mt3==0.0.1)
-  Downloading sacrebleu-2.5.1-py3-none-any.whl.metadata (51 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.8/51.8 kB 4.7 MB/s eta 0:00:00
-Collecting seqio-nightly (from t5->mt3==0.0.1)
-  Downloading seqio_nightly-0.0.18.dev20250227-py3-none-any.whl.metadata (52 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.2/52.2 kB 4.4 MB/s eta 0:00:00
-Collecting tfds-nightly (from t5->mt3==0.0.1)
-  Downloading tfds_nightly-4.9.9.dev202510250044-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: rouge-score>=0.1.2 in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (0.1.2)
+Requirement already satisfied: sacrebleu in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (2.5.1)
+Requirement already satisfied: seqio-nightly in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (0.0.18.dev20250227)
+Requirement already satisfied: tfds-nightly in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (4.9.2.dev202308090034)
 Requirement already satisfied: transformers>=2.7.0 in /usr/local/lib/python3.12/dist-packages (from t5->mt3==0.0.1) (4.57.1)
 Collecting airio@ git+https://github.com/google/airio#egg=airio (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Cloning https://github.com/google/airio to /tmp/pip-install-kra1n287/airio_98ee8debb5c54acd8a3f085b0b00d5f8
-  Running command git clone --filter=blob:none --quiet https://github.com/google/airio /tmp/pip-install-kra1n287/airio_98ee8debb5c54acd8a3f085b0b00d5f8
+  Cloning https://github.com/google/airio to /tmp/pip-install-ctqwhk3x/airio_0d59cc04bbcb4633ac00315aa777c591
+  Running command git clone --filter=blob:none --quiet https://github.com/google/airio /tmp/pip-install-ctqwhk3x/airio_0d59cc04bbcb4633ac00315aa777c591
   Resolved https://github.com/google/airio to commit 3c50084c79a8ddc44cda196bc052603e1f425512
   Preparing metadata (setup.py) ... done
 Collecting clu@ git+https://github.com/google/CommonLoopUtils#egg=clu (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Cloning https://github.com/google/CommonLoopUtils to /tmp/pip-install-kra1n287/clu_73f2e8a723444433b2173c63ab2f0a66
-  Running command git clone --filter=blob:none --quiet https://github.com/google/CommonLoopUtils /tmp/pip-install-kra1n287/clu_73f2e8a723444433b2173c63ab2f0a66
+  Cloning https://github.com/google/CommonLoopUtils to /tmp/pip-install-ctqwhk3x/clu_60572deccb994bbbbf16c0765da33229
+  Running command git clone --filter=blob:none --quiet https://github.com/google/CommonLoopUtils /tmp/pip-install-ctqwhk3x/clu_60572deccb994bbbbf16c0765da33229
   Resolved https://github.com/google/CommonLoopUtils to commit 949e50380a67c934f1d10bcf241cb0c56d369289
   Preparing metadata (setup.py) ... done
 Collecting jestimator@ git+https://github.com/google-research/jestimator#egg=jestimator (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Cloning https://github.com/google-research/jestimator to /tmp/pip-install-kra1n287/jestimator_25889d3a421241268777acdba97474fe
-  Running command git clone --filter=blob:none --quiet https://github.com/google-research/jestimator /tmp/pip-install-kra1n287/jestimator_25889d3a421241268777acdba97474fe
+  Cloning https://github.com/google-research/jestimator to /tmp/pip-install-ctqwhk3x/jestimator_669ff3fd0a2e4a45989f74ae29e7cdcf
+  Running command git clone --filter=blob:none --quiet https://github.com/google-research/jestimator /tmp/pip-install-ctqwhk3x/jestimator_669ff3fd0a2e4a45989f74ae29e7cdcf
   Resolved https://github.com/google-research/jestimator to commit 326824a477feef6d92e6f44175000907a72899ca
   Installing build dependencies ... done
   Getting requirements to build wheel ... done
   Preparing metadata (pyproject.toml) ... done
 Collecting optax@ git+https://github.com/deepmind/optax#egg=optax (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Cloning https://github.com/deepmind/optax to /tmp/pip-install-kra1n287/optax_a5c05d4dac094ee2a05a1b677c3e94dd
-  Running command git clone --filter=blob:none --quiet https://github.com/deepmind/optax /tmp/pip-install-kra1n287/optax_a5c05d4dac094ee2a05a1b677c3e94dd
+  Cloning https://github.com/deepmind/optax to /tmp/pip-install-ctqwhk3x/optax_2aabd0648e2b472e8279f44810bca74b
+  Running command git clone --filter=blob:none --quiet https://github.com/deepmind/optax /tmp/pip-install-ctqwhk3x/optax_2aabd0648e2b472e8279f44810bca74b
   Resolved https://github.com/deepmind/optax to commit dcff8383be686b5f35801cff86375d15ce50a018
   Installing build dependencies ... done
   Getting requirements to build wheel ... done
   Preparing metadata (pyproject.toml) ... done
-Collecting cached_property (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading cached_property-2.0.1-py3-none-any.whl.metadata (10 kB)
-Collecting fiddle>=0.2.5 (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading fiddle-0.3.0-py3-none-any.whl.metadata (2.3 kB)
-Collecting jaxtyping (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading jaxtyping-0.3.3-py3-none-any.whl.metadata (7.8 kB)
-Collecting tensorflow-cpu (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading tensorflow_cpu-2.20.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.5 kB)
+Requirement already satisfied: cached_property in /usr/local/lib/python3.12/dist-packages (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (2.0.1)
+Requirement already satisfied: fiddle>=0.2.5 in /usr/local/lib/python3.12/dist-packages (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.3.0)
+Requirement already satisfied: jaxtyping in /usr/local/lib/python3.12/dist-packages (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.3.3)
+Requirement already satisfied: tensorflow-cpu in /usr/local/lib/python3.12/dist-packages (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (2.19.1)
 Requirement already satisfied: astunparse>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (1.6.3)
 Requirement already satisfied: flatbuffers>=24.3.25 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (25.9.23)
 Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (0.6.0)
@@ -304,7 +207,7 @@ Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-pack
 Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (3.2.0)
 Requirement already satisfied: wrapt>=1.11.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (2.0.1)
 Requirement already satisfied: grpcio<2.0,>=1.24.3 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (1.76.0)
-Requirement already satisfied: tensorboard~=2.19.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (2.19.0)
+Requirement already satisfied: tensorboard<2.19,>=2.18 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (2.18.0)
 Requirement already satisfied: keras>=3.5.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (3.10.0)
 Requirement already satisfied: h5py>=3.11.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow->mt3==0.0.1) (3.15.1)
 Requirement already satisfied: array_record>=0.5.0 in /usr/local/lib/python3.12/dist-packages (from tensorflow-datasets->mt3==0.0.1) (0.8.2)
@@ -328,8 +231,7 @@ Requirement already satisfied: einops in /usr/local/lib/python3.12/dist-packages
 Requirement already satisfied: fsspec in /usr/local/lib/python3.12/dist-packages (from etils[edc,enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets->mt3==0.0.1) (2025.3.0)
 Requirement already satisfied: zipp in /usr/local/lib/python3.12/dist-packages (from etils[edc,enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets->mt3==0.0.1) (3.23.0)
 Requirement already satisfied: graphviz in /usr/local/lib/python3.12/dist-packages (from fiddle>=0.2.5->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.21)
-Collecting libcst (from fiddle>=0.2.5->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading libcst-1.8.6-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (15 kB)
+Requirement already satisfied: libcst in /usr/local/lib/python3.12/dist-packages (from fiddle>=0.2.5->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (1.8.6)
 Requirement already satisfied: sortedcontainers<3.0,>=2.0 in /usr/local/lib/python3.12/dist-packages (from intervaltree>=2.1.0->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (2.4.0)
 Requirement already satisfied: namex in /usr/local/lib/python3.12/dist-packages (from keras>=3.5.0->tensorflow->mt3==0.0.1) (0.1.0)
 Requirement already satisfied: optree in /usr/local/lib/python3.12/dist-packages (from keras>=3.5.0->tensorflow->mt3==0.0.1) (0.17.0)
@@ -349,44 +251,38 @@ Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/d
 Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=11.1->flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (4.0.0)
 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=11.1->flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (2.19.2)
 Requirement already satisfied: cffi>=1.0 in /usr/local/lib/python3.12/dist-packages (from soundfile>=0.12.1->librosa->mt3==0.0.1) (2.0.0)
-Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow->mt3==0.0.1) (3.10)
-Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow->mt3==0.0.1) (0.7.2)
-Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from tensorboard~=2.19.0->tensorflow->mt3==0.0.1) (3.1.3)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.12/dist-packages (from tensorboard<2.19,>=2.18->tensorflow->mt3==0.0.1) (3.10)
+Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /usr/local/lib/python3.12/dist-packages (from tensorboard<2.19,>=2.18->tensorflow->mt3==0.0.1) (0.7.2)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from tensorboard<2.19,>=2.18->tensorflow->mt3==0.0.1) (3.1.3)
 Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from transformers>=2.7.0->t5->mt3==0.0.1) (3.20.0)
 Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /usr/local/lib/python3.12/dist-packages (from transformers>=2.7.0->t5->mt3==0.0.1) (0.36.0)
 Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers>=2.7.0->t5->mt3==0.0.1) (2024.11.6)
 Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.12/dist-packages (from transformers>=2.7.0->t5->mt3==0.0.1) (0.22.1)
 Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers>=2.7.0->t5->mt3==0.0.1) (0.6.2)
-Collecting grain==0.2.12 (from airio@ git+https://github.com/google/airio#egg=airio->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading grain-0.2.12-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (16 kB)
-Collecting tfds-nightly (from t5->mt3==0.0.1)
-  Downloading tfds_nightly-4.9.2.dev202308090034-py3-none-any.whl.metadata (9.3 kB)
+Requirement already satisfied: grain==0.2.12 in /usr/local/lib/python3.12/dist-packages (from airio@ git+https://github.com/google/airio#egg=airio->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.2.12)
 Requirement already satisfied: click in /usr/local/lib/python3.12/dist-packages (from tfds-nightly->t5->mt3==0.0.1) (8.3.0)
 Requirement already satisfied: cloudpickle in /usr/local/lib/python3.12/dist-packages (from grain==0.2.12->airio@ git+https://github.com/google/airio#egg=airio->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (3.1.2)
 Requirement already satisfied: more-itertools>=9.1.0 in /usr/local/lib/python3.12/dist-packages (from grain==0.2.12->airio@ git+https://github.com/google/airio#egg=airio->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (10.8.0)
-Collecting ml_collections (from clu@ git+https://github.com/google/CommonLoopUtils#egg=clu->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading ml_collections-1.1.0-py3-none-any.whl.metadata (22 kB)
-Collecting jedi>=0.16 (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1)
-  Downloading jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Requirement already satisfied: ml_collections in /usr/local/lib/python3.12/dist-packages (from clu@ git+https://github.com/google/CommonLoopUtils#egg=clu->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (1.1.0)
+Requirement already satisfied: jedi>=0.16 in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.19.2)
 Requirement already satisfied: pickleshare in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.7.5)
 Requirement already satisfied: traitlets>=4.2 in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (5.7.1)
 Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (3.0.52)
 Requirement already satisfied: backcall in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.2.0)
 Requirement already satisfied: matplotlib-inline in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.2.1)
 Requirement already satisfied: pexpect>4.3 in /usr/local/lib/python3.12/dist-packages (from IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (4.9.0)
-Collecting wadler-lindig>=0.1.3 (from jaxtyping->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading wadler_lindig-0.1.7-py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: wadler-lindig>=0.1.3 in /usr/local/lib/python3.12/dist-packages (from jaxtyping->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.1.7)
 Requirement already satisfied: chex>=0.1.87 in /usr/local/lib/python3.12/dist-packages (from optax@ git+https://github.com/deepmind/optax#egg=optax->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.1.90)
 Requirement already satisfied: docstring-parser>=0.12 in /usr/local/lib/python3.12/dist-packages (from pyglove->seqio@ git+https://github.com/google/seqio#egg=seqio->mt3==0.0.1) (0.17.0)
-Collecting portalocker (from sacrebleu->t5->mt3==0.0.1)
-  Downloading portalocker-3.2.0-py3-none-any.whl.metadata (8.7 kB)
+Requirement already satisfied: portalocker in /usr/local/lib/python3.12/dist-packages (from sacrebleu->t5->mt3==0.0.1) (3.2.0)
 Requirement already satisfied: tabulate>=0.8.9 in /usr/local/lib/python3.12/dist-packages (from sacrebleu->t5->mt3==0.0.1) (0.9.0)
-Collecting colorama (from sacrebleu->t5->mt3==0.0.1)
-  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: colorama in /usr/local/lib/python3.12/dist-packages (from sacrebleu->t5->mt3==0.0.1) (0.4.6)
 Requirement already satisfied: lxml in /usr/local/lib/python3.12/dist-packages (from sacrebleu->t5->mt3==0.0.1) (5.4.0)
 INFO: pip is looking at multiple versions of tensorflow-cpu to determine which version is compatible with other requirements. This could take a while.
 Collecting tensorflow-cpu (from t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1)
-  Downloading tensorflow_cpu-2.19.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+  Using cached tensorflow_cpu-2.20.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.5 kB)
+  Downloading tensorflow_cpu-2.19.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+  Downloading tensorflow_cpu-2.18.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
 Requirement already satisfied: googleapis-common-protos<2,>=1.56.4 in /usr/local/lib/python3.12/dist-packages (from tensorflow-metadata->tensorflow-datasets->mt3==0.0.1) (1.72.0)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.12/dist-packages (from cffi>=1.0->soundfile>=0.12.1->librosa->mt3==0.0.1) (2.23)
 Requirement already satisfied: toolz>=0.9.0 in /usr/local/lib/python3.12/dist-packages (from chex>=0.1.87->optax@ git+https://github.com/deepmind/optax#egg=optax->t5x@ git+https://github.com/google-research/t5x#egg=t5x->mt3==0.0.1) (0.12.1)
@@ -396,84 +292,32 @@ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist
 Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=11.1->flax@ git+https://github.com/google/flax#egg=flax->mt3==0.0.1) (0.1.2)
 Requirement already satisfied: ptyprocess>=0.5 in /usr/local/lib/python3.12/dist-packages (from pexpect>4.3->IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.7.0)
 Requirement already satisfied: wcwidth in /usr/local/lib/python3.12/dist-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->IPython->note-seq@ git+https://github.com/magenta/note-seq#egg=note_seq->mt3==0.0.1) (0.2.14)
-Downloading pyFluidSynth-1.3.0-py3-none-any.whl (18 kB)
-Downloading mir_eval-0.8.2-py3-none-any.whl (102 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.8/102.8 kB 7.9 MB/s eta 0:00:00
-Downloading t5-0.9.4-py2.py3-none-any.whl (164 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.5/164.5 kB 13.8 MB/s eta 0:00:00
-Downloading fiddle-0.3.0-py3-none-any.whl (419 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 419.8/419.8 kB 33.4 MB/s eta 0:00:00
-Downloading mesh_tensorflow-0.1.21-py3-none-any.whl (385 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.2/385.2 kB 25.1 MB/s eta 0:00:00
-Downloading mido-1.3.3-py3-none-any.whl (54 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 kB 3.8 MB/s eta 0:00:00
-Downloading tfds_nightly-4.9.2.dev202308090034-py3-none-any.whl (5.0 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 105.3 MB/s eta 0:00:00
-Downloading grain-0.2.12-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (499 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 499.4/499.4 kB 28.6 MB/s eta 0:00:00
-Downloading cached_property-2.0.1-py3-none-any.whl (7.4 kB)
-Downloading jaxtyping-0.3.3-py3-none-any.whl (55 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.9/55.9 kB 5.5 MB/s eta 0:00:00
-Downloading pyglove-0.4.5-py3-none-any.whl (698 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 698.9/698.9 kB 40.1 MB/s eta 0:00:00
-Downloading sacrebleu-2.5.1-py3-none-any.whl (104 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.1/104.1 kB 11.4 MB/s eta 0:00:00
-Downloading seqio_nightly-0.0.18.dev20250227-py3-none-any.whl (357 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 357.5/357.5 kB 33.9 MB/s eta 0:00:00
-Downloading tensorflow_cpu-2.19.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (251.9 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.9/251.9 MB 5.8 MB/s eta 0:00:00
-Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 71.9 MB/s eta 0:00:00
-Downloading wadler_lindig-0.1.7-py3-none-any.whl (20 kB)
-Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
-Downloading libcst-1.8.6-cp312-cp312-manylinux_2_28_x86_64.whl (2.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 103.1 MB/s eta 0:00:00
-Downloading ml_collections-1.1.0-py3-none-any.whl (76 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.7/76.7 kB 7.8 MB/s eta 0:00:00
-Downloading portalocker-3.2.0-py3-none-any.whl (22 kB)
-Building wheels for collected packages: flax, note-seq, pretty_midi, seqio, t5x, intervaltree, rouge-score, airio, clu, jestimator, optax
-  Building wheel for flax (pyproject.toml) ... done
-  Created wheel for flax: filename=flax-0.12.1-py3-none-any.whl size=488158 sha256=1818e10c6e13957ddd222ae249da7bef2cdc2a22d7ca6040859d6e6d1dec8ffd
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/1c/1c/50/70e06d9ee1df89d65ab742227bddb43d8e4eea822db6757377
-  Building wheel for note-seq (setup.py) ... done
-  Created wheel for note-seq: filename=note_seq-0.0.5-py3-none-any.whl size=210131 sha256=4d30798ad2781a1b1a8d7ba429cf93fb54096b8d38959b1a860b82c928c7f1f2
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/db/f9/c9/52b95a036e51d1bf46def94b8625b137fc334672ae4b03eb0b
-  Building wheel for pretty_midi (setup.py) ... done
-  Created wheel for pretty_midi: filename=pretty_midi-0.2.11-py3-none-any.whl size=5595886 sha256=ae677491d17740c05d8f7181961f10c929e42ec6f131c3ff72b697445416f241
-  Stored in directory: /root/.cache/pip/wheels/f4/ad/93/a7042fe12668827574927ade9deec7f29aad2a1001b1501882
+Downloading tensorflow_cpu-2.18.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (230.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 230.4/230.4 MB 5.4 MB/s eta 0:00:00
+Building wheels for collected packages: seqio, t5x
   Building wheel for seqio (setup.py) ... done
-  Created wheel for seqio: filename=seqio-0.0.20-py3-none-any.whl size=357570 sha256=70fd08aaca2c9b59746e2910e96c08b9360762c83f37e586c10b0fa4958cd9d0
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/1a/31/66/e0489b955c5d1fab8c510877cbaffe4168a69f1a1f66a77a04
+  Created wheel for seqio: filename=seqio-0.0.1-py3-none-any.whl size=357558 sha256=159caa5e940dd82f012f8ddd4f65cfbad38cec969133a29b003346d9d1e5bc5d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zm8rnj9k/wheels/1a/31/66/e0489b955c5d1fab8c510877cbaffe4168a69f1a1f66a77a04
   Building wheel for t5x (setup.py) ... done
-  Created wheel for t5x: filename=t5x-0.0.0-py3-none-any.whl size=544228 sha256=368650e2eadf0411b031fe23814a42ac26e78269594a54e8b80c48c33429b463
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/a0/f8/c4/fe041169698f83558180db50907c11993b6620b26b61df4683
-  Building wheel for intervaltree (setup.py) ... done
-  Created wheel for intervaltree: filename=intervaltree-3.1.0-py2.py3-none-any.whl size=26098 sha256=affe14d48104d6859520931ead3438522e121e8f72ed2299ac2f8c347f112643
-  Stored in directory: /root/.cache/pip/wheels/65/c3/c3/238bf93c243597857edd94ddb0577faa74a8e16e9585896e83
-  Building wheel for rouge-score (setup.py) ... done
-  Created wheel for rouge-score: filename=rouge_score-0.1.2-py3-none-any.whl size=24934 sha256=79797e6dab78941258780424fb0037ebaa4dc8d855b223e0d585e85f7473f735
-  Stored in directory: /root/.cache/pip/wheels/85/9d/af/01feefbe7d55ef5468796f0c68225b6788e85d9d0a281e7a70
-  Building wheel for airio (setup.py) ... done
-  Created wheel for airio: filename=airio-0.0.1-py3-none-any.whl size=120025 sha256=2a3f6ff08b5ddba5d467385e6d51d0314a40669e1d12620c689f94ea3e82e77b
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/b9/5f/80/062a14b56655d6f0852fe26b6a05757801d22aa32902d186ca
-  Building wheel for clu (setup.py) ... done
-  Created wheel for clu: filename=clu-0.0.12-py3-none-any.whl size=103802 sha256=5a99a5165d2ddc9dffc28159f8882b881684f5421e6e562d392f6cede4396320
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/56/81/41/5c2c9023f146178a4ecc51cd6e2a792e9c83995aecc19306ea
-  Building wheel for jestimator (pyproject.toml) ... done
-  Created wheel for jestimator: filename=jestimator-0.3.3-py3-none-any.whl size=2114114 sha256=c36f54d5d4a35d99433a00d82863a08d8e0bf48026cf7ab068dcc3fee42c3cbc
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/6b/bf/53/f0ee5d8827165073ab0318a08d2da608db6c50369f60c3e502
-  Building wheel for optax (pyproject.toml) ... done
-  Created wheel for optax: filename=optax-0.2.7.dev0-py3-none-any.whl size=379882 sha256=1b3fa28c2131043ffeed68ccee13211e8169d8d559fa5e12bce68add477e12d8
-  Stored in directory: /tmp/pip-ephem-wheel-cache-baagzjya/wheels/bd/d8/72/55ffd7d2db140e0aa7bf1b5437f2af99bb9578c69a6cfdbbcc
-Successfully built flax note-seq pretty_midi seqio t5x intervaltree rouge-score airio clu jestimator optax
-Installing collected packages: wadler-lindig, pyglove, pyfluidsynth, portalocker, ml_collections, mido, mesh-tensorflow, libcst, jedi, intervaltree, colorama, cached_property, sacrebleu, rouge-score, pretty_midi, mir_eval, jaxtyping, fiddle, tensorflow-cpu, note-seq, grain, tfds-nightly, optax, flax, jestimator, clu, seqio-nightly, seqio, t5, airio, t5x, mt3
-  Attempting uninstall: optax
-    Found existing installation: optax 0.2.6
-    Uninstalling optax-0.2.6:
-      Successfully uninstalled optax-0.2.6
-  Attempting uninstall: flax
-    Found existing installation: flax 0.10.7
-    Uninstalling flax-0.10.7:
-      Successfully uninstalled flax-0.10.7
+  Created wheel for t5x: filename=t5x-0.0.1-py3-none-any.whl size=544227 sha256=14479ca9ded34e029ef672f141e0cc8c14a22ea5d38d102452445db814d32169
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zm8rnj9k/wheels/a0/f8/c4/fe041169698f83558180db50907c11993b6620b26b61df4683
+Successfully built seqio t5x
+Installing collected packages: tensorflow-cpu, seqio, t5x, mt3
+  Attempting uninstall: tensorflow-cpu
+    Found existing installation: tensorflow_cpu 2.19.1
+    Uninstalling tensorflow_cpu-2.19.1:
+      Successfully uninstalled tensorflow_cpu-2.19.1
+  Attempting uninstall: seqio
+    Found existing installation: seqio 0.0.20
+    Uninstalling seqio-0.0.20:
+      Successfully uninstalled seqio-0.0.20
+  Attempting uninstall: t5x
+    Found existing installation: t5x 0.0.0
+    Uninstalling t5x-0.0.0:
+      Successfully uninstalled t5x-0.0.0
+  Attempting uninstall: mt3
+    Found existing installation: mt3 0.0.1
+    Uninstalling mt3-0.0.1:
+      Successfully uninstalled mt3-0.0.1
   Running setup.py develop for mt3
-Successfully installed airio-0.0.1 cached_property-2.0.1 clu-0.0.12 colorama-0.4.6 fiddle-0.3.0 flax-0.12.1 grain-0.2.12 intervaltree-3.1.0 jaxtyping-0.3.3 jedi-0.19.2 jestimator-0.3.3 libcst-1.8.6 mesh-tensorflow-0.1.21 mido-1.3.3 mir_eval-0.8.2 ml_collections-1.1.0 mt3-0.0.1 note-seq-0.0.5 optax-0.2.7.dev0 portalocker-3.2.0 pretty_midi-0.2.11 pyfluidsynth-1.3.0 pyglove-0.4.5 rouge-score-0.1.2 sacrebleu-2.5.1 seqio-0.0.20 seqio-nightly-0.0.18.dev20250227 t5-0.9.4 t5x-0.0.0 tensorflow-cpu-2.19.1 tfds-nightly-4.9.2.dev202308090034 wadler-lindig-0.1.7
+Successfully installed mt3-0.0.1 seqio-0.0.1 t5x-0.0.1 tensorflow-cpu-2.18.1
